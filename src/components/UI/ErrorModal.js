@@ -9,7 +9,7 @@ const Backdrop = props => {
     return <div className={classes.backdrop} onClick={props.onConfirm} />
 };
 
-const ModelOverlay = props => {
+const ModalOverlay = props => {
     return (
         <Card className={classes.modal}>
             <header className={classes.header}>
