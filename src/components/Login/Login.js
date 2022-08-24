@@ -15,6 +15,7 @@ const Login = (props) => {
     setTimeout( () => {
       setFormIsValid(
         enteredEmail.target.value.includes('@') && enteredPassword.trim().length > 6
+        
       );
     })
   }, [enteredEmail, enteredPassword]);
