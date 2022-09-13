@@ -44,7 +44,11 @@ const Login = (props) => {
   }, [enteredEmail, enteredPassword]);
 
   const emailChangeHandler = (event) => {
-    setEnteredEmail(event.target.value);
+    dispatchEmail({type: 'USER_INPUT', val: event.target.value});
+
+    setFormIsValid(
+      event.target.value.includes('@') && enteredPassword.trim().lenmgth > 6
+    );
   };
 
   const passwordChangeHandler = (event) => {
