@@ -6,7 +6,7 @@ import Button from '../UI/Button/Button';
 
 const emailReducer = (state, action) => {
   if (action.type === 'USER_INPUT')
-  return {value: '', isValid: false};
+  return {value: action.val, isValid: action.val};
 };
 
 const Login = (props) => {
