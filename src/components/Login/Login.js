@@ -61,7 +61,7 @@ const Login = (props) => {
   };
 
   const validateEmailHandler = () => {
-    setEmailIsValid(emailState.isValid);
+    dispatchEmail({type: 'INPUT_BLUR'});
   };
 
   const validatePasswordHandler = () => {
