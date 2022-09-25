@@ -36,6 +36,12 @@ const Login = (props) => {
     isValid: null,
   });
 
+  const [passwordState, dispatchPassword] = useReducer(emailReducer, {
+    value: '',
+    isValid: null,
+  });
+
+
   useEffect( () => {
     console.log('EFFECT RUNNING');
 
